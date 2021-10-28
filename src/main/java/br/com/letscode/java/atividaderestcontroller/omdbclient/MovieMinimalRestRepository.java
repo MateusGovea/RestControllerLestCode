@@ -8,11 +8,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface MovieMinimalRestRepository {
 
     @GetMapping
-    ResultSearch search(@RequestParam("s") String title);
-
-    @GetMapping
-    MovieMinimal searchCsv(@RequestParam("s") String title);
-
-    //@GetMapping
-    //ResultSearch searchId(@RequestParam("s") String imdbid);
+    ResultSearch search(@RequestParam("s") String movieTitle);
 }
